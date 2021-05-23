@@ -32,14 +32,14 @@ header li a:hover {
     text-decoration: underline;
 }
 
-#left-list {
+#header-left-list {
     display: flex;
     justify-content: space-between;
     width: 110px;
     margin-left: 25px;
 }
 
-#right-list {
+#header-right-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,16 +50,19 @@ header li a:hover {
 
 #app-icon {
     color: rgb(141, 140, 140);
-    padding-top: 10px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #app-icon:hover {
     cursor: pointer;
-    background-color:#e2e4e5;
-    background-size: 50px;
+    background-color:#e2e4e5b0;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    border-radius: 8px;
+    border-radius: 50%;
 }
 
 #sign-in {
@@ -74,17 +77,17 @@ header li a:hover {
 
 #sign-in:hover {
     cursor: pointer;
+    background-color: #4286f4d2;
 }
 
 #logo {
     width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 850px;
     margin-top: 200px;
 }
 
 #search-box {
-    margin-left: 660px;
+    margin-left: 700px;
     margin-top: 25px;
     position: relative;
 }
@@ -98,6 +101,9 @@ header li a:hover {
     outline: none;
     background-color: white;
 }
+#search-box input:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
 #search-box span {
     position: absolute;
@@ -110,11 +116,16 @@ header li a:hover {
     padding-left: 52px;
 }
 
+#search-box input[type=search]:focus {
+    padding-left: 52px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 #search-buttons {
     width: 280px;
     display: flex;
     justify-content: space-between;
-    margin-left: 820px;
+    margin-left: 860px;
     margin-top: 25px;
 }
 
@@ -132,4 +143,63 @@ header li a:hover {
     border-style: solid;
     border-width: thin;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#location {
+    height: 55px;
+    margin-top: 247px;
+    background-color: rgb(219, 219, 219, 0.7);
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #c0c0c0b6;
+}
+
+#location p {
+    color: #747474;
+    margin-left: 30px;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+footer {
+    height: 65px;
+    background-color: rgb(219, 219, 219, 0.7);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #747474;
+    font-size: 13px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#footer-left-links {
+    width: 330px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-center-links {
+    width: 197px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-center-links img {
+    height: 13px;
+}
+
+#footer-right-links {
+    width: 220px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
 }
